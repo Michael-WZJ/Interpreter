@@ -1,2 +1,2 @@
 # Interpreter
-该解释器能够读取以类MATLAB语言编写的文件，解析此文件并输出运行结果
+The interpreter can read a file written in a MATLAB-like language, parse the file and output the results.
