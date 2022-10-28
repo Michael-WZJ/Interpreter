@@ -1,0 +1,19 @@
+I have used three strategies for the testing:
+1. Using assert() for some simple auxiliary functions;
+2. Buildinig a test.c file to check that every single function works well before writing the nlab.c codes;
+3. Writing different NLAB programs to check if the parser and interpreter works well.
+(i.e. All the files above are attached in the nlab.zip)
+
+The first part of my test.c file are divided into four tests to separately check if all the subfunctions exactly do their job.
+And the second part of the test.c uses a test.nlb program which contains a large set of different instructions to check if the 
+entire parser or the interpreter could work well. Sometimes it's useful to know what exactly happened during the running time, 
+so I use two print functions (Print_Prog and Print_Var) in the process of the testing to show if the intermediate results are 
+correct. However, printing could cause a mess on the terminal so it's not necessary to print out the intermediate results everytime.
+But I still need to manually check that the final results produced by the interpreter match the instructions in the test.nlb file.
+
+All of the NLAB programs in the Test folder contain a certain type of syntax or semantic error. I run these .nlb flies with the 
+file parse or interp to test if my program could manage to detect all these errors. It really takes much time to check by hand 
+whether the terminal complains the corresponding error or not. For example, if I run the fail-seta.nlb, the terminal should complain 
+"No enough variable for B-ADD ?".
+
+In conclusion, I use both the automatic and manual methods to test my program.

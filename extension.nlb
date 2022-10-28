@@ -1,0 +1,23 @@
+# Comments
+# Comments
+
+BEGIN {
+   READ "compare.arr" $L
+   SET $K := 0 ;
+  
+   IF $K $L B-GREATER ; {
+      SET $M := $K $L B-GREATER ;
+      PRINT "KL:"
+      PRINT $M
+   }
+   ELSEIF $L $K B-GREATER ; {
+      SET $M := $L $K B-GREATER ;
+      PRINT "LK:"
+      PRINT $M
+   }
+   ELSE {
+      PRINT "Invalid"
+   } ;
+
+}
+

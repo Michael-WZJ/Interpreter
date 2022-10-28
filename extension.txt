@@ -1,0 +1,13 @@
+1. The program could identify the comments between the codes, as long as the comments begin with # .
+
+2. By checking a variable table, the program could be warning when a variable is used before definition.
+
+3. Adding the IF-ELSE judgment statement, if all the elements in the matrix are true, then the matrix is true.
+The judgment statement must end with ";".
+
+<INSTRC> ::= <PRINT> | <SET> | <CREATE> | <LOOP> | <IFS>
+<IFS> ::= "IF" <POLISHLIST> "{" <INSTRCLIST> <ELSELIST>
+<ELSELIST> ::= <ELSEIF> <ELSELIST> | "ELSE" "{" <INSTRCLIST> ";" | ";"
+<ELSEIF> ::= "ELSEIF" <POLISHLIST> "{" <INSTRCLIST>
+
+(i.e. However, I've only finished the parser version for IF-ELSE.)

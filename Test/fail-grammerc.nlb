@@ -1,0 +1,8 @@
+# Invalid .arr file
+
+BEGIN { 
+   PRINT "Start:"
+   SET $C := 1 
+   PRINT $C
+   PRINT "End."
+}

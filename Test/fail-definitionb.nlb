@@ -1,0 +1,9 @@
+# The variable is used before definition
+
+BEGIN { 
+   PRINT "Start:"
+   ONES 6 5 $D
+   SET $D := $D $E B-ADD ;
+   PRINT $D
+   PRINT "End."
+}

@@ -1,0 +1,7 @@
+# The variable is used before definition
+
+BEGIN { 
+   PRINT "Start:"
+   PRINT $A 
+   PRINT "End."
+}

@@ -1,0 +1,10 @@
+# Operating two matrix of different size
+
+BEGIN { 
+   PRINT "Start:"
+   ONES 3 3 $A
+   ONES 3 4 $D
+   SET $D := $D $A B-ADD ;
+   PRINT $D
+   PRINT "End."
+}

@@ -1,0 +1,10 @@
+# Invalid parameters for SET
+
+BEGIN { 
+   PRINT "Start:"
+   SET $A := 1 ;
+   ONES 6 5 $D
+   SET $D := $D 1 $A B-ADD 2 B-TIMES ;
+   PRINT $D
+   PRINT "End."
+}

@@ -1,0 +1,8 @@
+# Invalid .arr file
+
+BEGIN { 
+   PRINT "Start:"
+   READ "invalid2.arr" $C
+   PRINT $C
+   PRINT "End."
+}

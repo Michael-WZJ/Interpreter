@@ -1,0 +1,26 @@
+# Notice that the loop counter is modified inside the loop
+# causing it to count at twice the speed : 2 4 6 8 10
+
+BEGIN { 
+}
+
+
+
+/* 
+echo $?
+make parse               ./parse test.nlb
+make parse_s             ./parse_s test.nlb
+make parse_v            valgrind ./parse_v test.nlb
+
+make interp_s            ./interp_s test.nlb
+make interp              ./interp test.nlb
+make interp_v            valgrind ./interp_v test.nlb
+
+
+valgrind ./interp_v nestedloop.nlb
+
+make allextension
+./extension_s extension.nlb
+valgrind ./extension_v extension.nlb
+*/
+

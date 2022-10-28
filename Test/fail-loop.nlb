@@ -1,0 +1,12 @@
+# The loop counter is changed to vector inside the loop
+
+BEGIN { 
+   PRINT "Start:"
+   ONES 3 2 $A
+   LOOP $I 10 {
+      SET $I := $A ;
+      SET $I := $I 1 B-ADD ; 
+      PRINT $I
+   }
+   PRINT "End."
+}

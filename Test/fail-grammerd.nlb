@@ -1,0 +1,7 @@
+# Invalid .arr file
+
+BEGIN { 
+   PRINT "Start:"
+   PRINT A
+   PRINT "End."
+}

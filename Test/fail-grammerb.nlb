@@ -1,0 +1,7 @@
+# Invalid grammer
+
+BEGIN { 
+   PRINT "Start:"
+   READ "invalid1.arr" 
+   PRINT "End."
+}

@@ -1,0 +1,8 @@
+# No BEGIN
+
+ { 
+   PRINT "Start:"
+   SET $A := 1 ;
+   PRINT $A
+   PRINT "End."
+}

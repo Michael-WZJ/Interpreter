@@ -1,0 +1,8 @@
+# Invalid parameters for SET
+
+BEGIN { 
+   PRINT "Start:"
+   SET $D := U-NOT 2 B-TIMES ;
+   PRINT $D
+   PRINT "End."
+}

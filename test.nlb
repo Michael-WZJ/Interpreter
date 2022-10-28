@@ -1,0 +1,59 @@
+# Comments
+# Comments
+
+BEGIN {
+   READ "compare.arr" $N
+   SET $O := 3 ;
+   SET $O := $O $N B-ADD $N B-TIMES ;
+   PRINT "O:"
+   PRINT $O
+
+   READ "compare.arr" $L
+   SET $K := 1 ;
+   SET $M := $K $L B-GREATER ;
+   PRINT "KL:"
+   PRINT $M
+   SET $M := $L $K B-GREATER ;
+   PRINT "LK:"
+   PRINT $M
+
+   ONES 6 5 $H
+   SET $I := 2 ;
+   PRINT "J:"
+   LOOP $H 3 {
+      SET $J := $I $H B-GREATER ; # Comments
+      PRINT $J
+   }
+    
+   # Comments
+   READ "$B.arr" $G
+   SET $F := $G U-EIGHTCOUNT ;
+   PRINT "F:"
+   PRINT $F
+
+   SET $E := 2 ;
+   PRINT "E:"
+   PRINT $E
+
+   ONES 6 5 $D
+   SET $D := $D U-NOT $E B-ADD 2 B-TIMES ;
+   PRINT "D:"
+   PRINT $D 
+
+   READ "compare.arr" $C
+   ONES 3 3 $C
+   PRINT "C:"
+   PRINT $C
+
+   READ "$B.arr" $B
+   PRINT "B:"
+   PRINT $B
+
+   READ "compare.arr" $A
+   PRINT "A:"
+   PRINT $A 
+
+   SET $A := $B ;
+   PRINT "A=B:"
+   PRINT $A
+}
